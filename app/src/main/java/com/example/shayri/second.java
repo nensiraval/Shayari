@@ -86,6 +86,8 @@ public class  second extends BaseAdapter
             @Override
             public void onClick(View v) {
 
+                // newgit
+
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
                 String shareBody = "Your body here";
