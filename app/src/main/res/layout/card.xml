@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -10,6 +11,7 @@
         app:cardCornerRadius="10dp"
         android:elevation="10dp"
         android:layout_margin="5dp"
+        android:backgroundTint="#CCB5F4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -20,7 +22,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="104dp"
             android:gravity="center"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="23dp" />
         <ImageView
             android:id="@+id/image"

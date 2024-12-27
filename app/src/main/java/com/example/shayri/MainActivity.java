@@ -23,10 +23,6 @@ public class MainActivity extends AppCompatActivity
 
         list = findViewById(R.id.list);
 
-//        ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_list_item_1,n);
-//        list.setAdapter(ad);
-
-        //Base adapter
         Myclass np = new Myclass(n, MainActivity.this,image, draw);
         list.setAdapter(np);
 

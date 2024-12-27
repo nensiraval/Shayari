@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity2">
 
     <TextView
@@ -18,12 +19,13 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="32dp"
-        android:textColor="#ffff">
+        android:textColor="#000">
     </TextView>
 
 <ListView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:id="@+id/shayri"/>
 
 </LinearLayout>

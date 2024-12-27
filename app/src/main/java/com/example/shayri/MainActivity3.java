@@ -16,7 +16,6 @@ import androidx.viewpager.widget.ViewPager;
 
 
 public class MainActivity3 extends AppCompatActivity {
-//    TextView txt;
     Button next, previous;
     ViewPager vpager;
     int p = 0;

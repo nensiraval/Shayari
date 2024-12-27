@@ -204,9 +204,8 @@ public class MainActivity2 extends AppCompatActivity {
         txt = findViewById(R.id.textview);
         shayri = findViewById(R.id.shayri);
 
-//        txt.setText(getIntent().getExtras().getString("new"));
 
-        String s= getIntent().getStringExtra("new");
+        String s = getIntent().getStringExtra("new");
         txt.setText(s);
 
         Log.d("=========", "onCreate: " + s);
@@ -214,11 +213,9 @@ public class MainActivity2 extends AppCompatActivity {
 
         if (s.equals("Morning")) {
             blank = m;
-        } else if (s.equals("Evening"))
-        {
+        } else if (s.equals("Evening")) {
             blank = e;
-        } else if (s.equals("Night"))
-        {
+        } else if (s.equals("Night")) {
             blank = ng;
         } else if (s.equals("Cool")) {
             blank = cl;
@@ -232,18 +229,13 @@ public class MainActivity2 extends AppCompatActivity {
             blank = fn;
         } else if (s.equals("Life")) {
             blank = l;
-        } else if (s.equals("Birthday"))
-        {
+        } else if (s.equals("Birthday")) {
             blank = btd;
-        } else if (s.equals("Motivation"))
-        {
+        } else if (s.equals("Motivation")) {
             blank = mt;
         } else if (s.equals("Anniversary")) {
             blank = an;
         }
-//        ad = new ArrayAdapter(MainActivity2.this,R.layout.newvalu, blank);
-//        shayri.setAdapter(ad);
-
         second as = new second(blank, MainActivity2.this, draw);
         shayri.setAdapter(as);
 
@@ -253,14 +245,9 @@ public class MainActivity2 extends AppCompatActivity {
 
                 Log.e("+++", "onItemClick: " + position);
                 String a = blank[position];
-                startActivity(new Intent(MainActivity2.this, MainActivity3.class).putExtra("shayri", blank[position]).putExtra("array",blank).putExtra("Int",position));
+                startActivity(new Intent(MainActivity2.this, MainActivity3.class).putExtra("shayri", blank[position]).putExtra("array", blank).putExtra("Int", position));
             }
         });
 
     }
 }
-
-//        //position set
-////        int n = getIntent().getIntExtra("new",39);
-////        String s = getIntent().getStringExtra("pos");
-////        Log.d("=========", "onCreate: "+n);
